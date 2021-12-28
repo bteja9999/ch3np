@@ -1,0 +1,51 @@
+# Default values for ch-03-non-prod
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+rsfs:
+  dev:
+    rancherProjectID: "p-z8fvs"
+    labels:
+      env: "Dev"
+  shared:
+    rancherProjectID: "p-65fnw"
+    labels:
+      env: "shared"  
+  labels:
+    line-of-business: "Risk-Solutions"
+    product-line: "Fraud-Solutions"
+    application-code: "rsfs"
+
+cscp:
+  dev:
+    rancherProjectID: "p-x264d"
+    labels:
+      env: "Dev"
+  shared:
+    rancherProjectID: "p-6ll68"
+    labels:
+      env: "shared"  
+  qa:
+    rancherProjectID: "p-6dcgr"
+    labels:
+      env: "QA"
+  perf:
+    rancherProjectID: "p-rjhmm"
+    labels:
+      env: "Perf"
+  labels:
+    line-of-business: "Communication-Solutions"
+    product-line: "Carrier-Provisioning"
+    application-code: "cscp"
+
+cmf:
+  dev:
+    rancherProjectID: "p-v5fp8"
+    labels:
+      env: "Dev"
+  labels:
+    line-of-business: "platform-Engineering"
